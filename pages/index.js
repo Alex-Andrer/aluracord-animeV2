@@ -68,8 +68,8 @@ function Titulo (props){
         <Box
           styleSheet={{
             display: 'flex', alignItems: 'center', justifyContent: 'center',
-            backgroundColor: appConfig.theme.colors.primary[500],
-            backgroundImage: 'url(https://virtualbackgrounds.site/wp-content/uploads/2020/08/the-matrix-digital-rain.jpg)',
+            
+            backgroundImage: 'url(https://www.planocritico.com/wp-content/uploads/2017/09/78-My-Hero-Academia-1-Temporada.jpg)',
             backgroundRepeat: 'no-repeat', backgroundSize: 'cover', backgroundBlendMode: 'multiply',
           }}
         >
@@ -96,7 +96,7 @@ function Titulo (props){
                 width: { xs: '100%', sm: '50%' }, textAlign: 'center', marginBottom: '32px',
               }}
             >
-              <Titulo tag="h2">Boas vindas de volta!</Titulo>
+              <Titulo tag="h2">Bem vindo de volta jovem herói!</Titulo>
               <Text variant="body3" styleSheet={{ marginBottom: '32px', color: appConfig.theme.colors.neutrals[300] }}>
                 {appConfig.name}
               </Text>
@@ -118,7 +118,7 @@ function Titulo (props){
                 fullWidth
                 buttonColors={{
                   contrastColor: appConfig.theme.colors.neutrals["000"],
-                  mainColor: appConfig.theme.colors.primary[500],
+                  mainColor: appConfig.theme.colors.primary[700],
                   mainColorLight: appConfig.theme.colors.primary[400],
                   mainColorStrong: appConfig.theme.colors.primary[600],
                 }}
