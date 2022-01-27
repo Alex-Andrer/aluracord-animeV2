@@ -3,6 +3,12 @@ import react from 'react';
 import {useRouter}from 'next/router';
 import appConfig from '../config.json';
 
+import React from 'react';
+
+
+
+
+
 
 function Titulo (props){
     //console.log(props)
@@ -38,6 +44,8 @@ function Titulo (props){
     //const username = 'peas';
     const [username, setUsername]= react.useState('');
     const roteamento = useRouter();
+
+   
   
     return (
       <>
@@ -46,7 +54,7 @@ function Titulo (props){
           styleSheet={{
             display: 'flex', alignItems: 'center', justifyContent: 'center',
             
-            backgroundImage: 'url(https://www.planocritico.com/wp-content/uploads/2017/09/78-My-Hero-Academia-1-Temporada.jpg)',
+            backgroundImage: appConfig.theme.background.imagem,
             backgroundRepeat: 'no-repeat', backgroundSize: 'cover', backgroundBlendMode: 'multiply',
           }}
         >
@@ -88,7 +96,7 @@ function Titulo (props){
               value={username}
               onChange={function (event){
                 const valor= event.target.value;
-                console.log('Deu certo',event.target.value);
+                //console.log('Deu certo',event.target.value);
                 setUsername(valor);
               }}
                 fullWidth

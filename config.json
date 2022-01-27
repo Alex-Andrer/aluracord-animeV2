@@ -1,6 +1,9 @@
 {
-  "name": "Aluracord - My Hero Academia (Alex-Andrer)",
+  "name": "Aluracord - My Hero Academia",
   "theme": {
+    "background":{
+      "imagem": "url(https://www.planocritico.com/wp-content/uploads/2017/09/78-My-Hero-Academia-1-Temporada.jpg)"
+    },
     "colors": {
       "primary": {
         "050": "#E3F9E5",
