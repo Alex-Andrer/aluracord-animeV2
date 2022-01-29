@@ -79,7 +79,7 @@ function Titulo (props){
               onSubmit={function (infosDoEvento){
                 //console.log('Alguém entrou');
                 infosDoEvento.preventDefault();
-                roteamento.push('/chat');
+                roteamento.push(`/chat?username=${username}`);
 
               }}
               styleSheet={{
